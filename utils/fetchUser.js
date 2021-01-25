@@ -8,7 +8,7 @@ const getUser  = async () => {
     const {phone, email} = person
     const {large: image} = person.picture
     const {password} = person.login 
-    const {firs, last} = person.name 
+    const {first, last} = person.name 
     const {dob: {age}} = person
     const {street: {number, name}} = person.location
     return {
@@ -18,7 +18,7 @@ const getUser  = async () => {
         password,
         age,
         street: `${number} ${name}`,
-        name: `${firs} ${last}`
+        name: `${first} ${last}`
     }
 }
 
